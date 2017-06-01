@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>document.createElement("myHero")</script>
+  <style>
+
+  </style>
+    <!--scripts-></--scripts-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js"></script>
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="client/assets/js/app.js"></script>
+    
+    <!--sripts end -->
+    <!--css-></--css-->
+    <link href="client/assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="client/assets/css/main.css" rel="stylesheet" />
+    <link href="client/assets/css/themify-icons.css" rel="stylesheet" />
+    <link href="/node_modules/toastr/build/toastr.css" rel="stylesheet" />
+    
+    <!--controllers-->
+     <script src="client/assets/js/controllers/login.js"></script>
+     <script src="client/assets/js/controllers/cart.js"></script>
+     <script src="client/assets/js/controllers/seekdash.js"></script>
+       <!--services-->
+     <script src="client/assets/js/services/home.js"></script>
+     <script src="client/assets/js/services/Account.js"></script>
+    
+    <!--Plugins-->
+   
+    
+    <!--directives-->
+    
+    
+    <!--libraries-->
+    <script src="client/assets/js/libraries/angular-touch.js"></script>
+     <script src="/node_modules/toastr/build/toastr.min.js"></script>
+    
+</head>
+<body ng-app="rogueone">
+
+    <div ng-include="'client/templates/header.html'" class="toppanel"></div>
+    <div width="100%" ng-view class="bodypanel"></div>
+</body>
+</html>

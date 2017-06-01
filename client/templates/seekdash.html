@@ -1,0 +1,27 @@
+<section  class="mainsec block edge--top--reverse" ng-repeat="data in addData">
+  <div class="container section-padding" style="padding-bottom: 2%;">
+        <div class="row">
+
+           
+            <div class="col-md-8 col-xs-12 col-sm-12 pull-left">
+                            <img class="img-responsive" ng-src={{data.imgsrc}} alt="">
+            </div>
+
+            <div class="col-md-4 pad100 pleft50 col-xs-12 col-sm-12 premiumResp">
+                 <h2 class="headline">{{data.id}}</h2>
+                 <div class="stories_items">
+                 <ul ng-repeat="dats in data.caliber">
+                     <li><span>{{dats.text}}</span></li>
+
+				</ul>
+                 </div>
+                 <div class="addtocartCls" ng-click="addToCart($index)" ng-hide="data.btnFlag" title="Add To Cart">
+                 	<span class="ti-shopping-cart"></span><span>Add To Cart</span>
+                 </div>
+                   <div class="addtocartCls" ng-show="data.btnFlag" ng-click="goCart()" title="Go To Cart">
+                 	<span class="ti-shopping-cart"></span><span>Go To Cart</span>
+                 </div>
+            </div>
+        </div>
+    </div>
+</section>

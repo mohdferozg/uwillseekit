@@ -1,0 +1,16 @@
+  <nav class="navbar navbar-default navbar-fixed-top navbar-style" ng-controller="loginctrl">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="ti-arrow-left cursorCls" ng-click="backbtn()" style="padding: 1em;font-size: 1.5em;" ng-show="showbackbtn" title="back buttton"></div>
+            </div>
+            <div class="col-md-7">
+                <div class="headerCls">{{headertitle}}</div>
+            </div>
+          <div id="navbar" class="navbar-collapse collapse col-md-3">
+            <ul class="nav navbar-nav navbar-right" ng-show="isloggedIn">
+              <li data-toggle="popover" data-trigger="focus" data-content="Logout"><div class="ti-shopping-cart pull-left cursorCls" style="padding: 0.5em;font-size: 1.8em;" ng-click="gocart()" ng-show="showcartbtn" title="Cart"></div><div class="pull-left" style="padding: 0.5em;font-size: 1.5em;" title="CurrentUser">{{currentUser}}</div>
+                <div class="pull-left ti-share-alt cursorCls logoutCls" ng-click="logout()" title="Logout"></div></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
